@@ -1,16 +1,48 @@
-# React + Vite
+# Overview:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digital Agency UI: 4 pages — TailwindCSS / Styled Components / Vanilla CSS + Axios (dynamic cards).
 
-Currently, two official plugins are available:
+This project showcases a modern digital agency interface inspired by creative tech branding and onboarding UI references.
+The goal was to explore different styling approaches within one React app to demonstrate adaptability and clean design principles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual inspiration:
+[Envato Elements — Advertising Agency Website](https://elements.envato.com/advertising-agency-website-SM84RT3)
 
-## React Compiler
+# IMPORTANT
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I did not try to break the code into the smallest components and do everything through props, but to demonstrate several ways of styling a web application
 
-## Expanding the ESLint configuration
+# How to run:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install && npm run dev
+
+# CSS Flexibility:
+
+pages/Home (Tailwind).
+pages/About (Styled Components),
+pages/Services (Axios),
+pages/Contact (Vanilla CSS),
+
+I used existing onboarding visual language as reference and implemented 3 different styling approaches to show different css flexibility
+
+# Notes
+
+The design is inspired by the Envato template above, but simplified and adapted to my own structure.
+
+Also I intentionally mixed three different CSS approaches to demonstrate flexibility in styling strategies across pages.
+
+Focused on component modularity, readability, and consistent color/font system.
+
+# Tech Stack
+
+React + Vite
+
+TailwindCSS (Home)
+
+Styled Components (About)
+
+Vanilla CSS (Contact)
+
+Axios (Services page, dynamic cards)
+
+React Router DOM v7
