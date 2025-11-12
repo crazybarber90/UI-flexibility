@@ -13,13 +13,15 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="bg-[#0A0F0F] text-gray-300 shadow-md fixed w-full z-50">
+    <nav className="bg-bg text-gray-300 shadow-md fixed w-full z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-[#00E0C6] font-bold text-xl font-poppins cursor-pointer">
-            UI Agency
-          </div>
+          <Link to={'/'}>
+            <div className="text-primary font-extralight text-xl font-poppins cursor-pointer">
+              UI Agency
+            </div>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden md:flex space-x-8 relative">
@@ -27,16 +29,18 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`relative px-2 py-1 font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? 'text-[#00E0C6]'
-                    : 'text-gray-300 hover:text-[#35F0FF]'
-                }`}
+                className={`font-extralight
+                  relative px-2 py-1 transition-colors
+                  ${
+                    location.pathname === link.path
+                      ? 'text-primary'
+                      : 'text-text hover:text-accent'
+                  }
+                  group
+                `}
               >
                 {link.name}
-                {location.pathname === link.path && (
-                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#00E0C6] rounded-full"></span>
-                )}
+                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></span>
               </Link>
             ))}
           </div>
@@ -78,10 +82,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden max-w-[90%] mx-auto rounded-lg backdrop-blur-md">
-          <div
-            className="flex flex-col items-center space-y-4 py-4 rounded-lg"
-            style={{ backgroundColor: 'rgba(18,24,24,0.7)' }}
-          >
+          <div className="bg-bg flex flex-col items-center space-y-4 py-4 rounded-lg">
             {links.map((link) => (
               <Link
                 key={link.name}
@@ -89,8 +90,8 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`font-medium text-lg transition-colors ${
                   location.pathname === link.path
-                    ? 'text-[#00E0C6]'
-                    : 'text-gray-300 hover:text-[#35F0FF]'
+                    ? 'text-primary'
+                    : 'text-text hover:text-accent'
                 }`}
               >
                 {link.name}

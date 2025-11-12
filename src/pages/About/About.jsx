@@ -55,7 +55,7 @@ const About = () => {
         </p>
       </Card>
 
-      <SectionContaner style={{ width: '80%', marginTop: '48px' }}>
+      <SectionContaner>
         <Title>Our Team</Title>
         <TeamContaner>
           {team.map((member, index) => (

@@ -23,8 +23,8 @@ export const MemberContainer = styled.div`
 
   &:hover {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 12px 40px rgba(0, 224, 198, 0.35);
-    border: 0.1px solid var(--primary);
+    box-shadow: 0 2px 8px rgba(0, 224, 198, 0.35);
+    border: 0.1px solid rgba(0, 224, 198, 0.35);
   }
 
   @media (max-width: 768px) {

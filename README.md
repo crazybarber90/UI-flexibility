@@ -45,4 +45,8 @@ Vanilla CSS (Contact)
 
 Axios (Services page, dynamic cards)
 
+Custom Hook (useFetch)
+
+Css / Talwindcss animations
+
 React Router DOM v7

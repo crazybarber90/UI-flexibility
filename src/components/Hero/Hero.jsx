@@ -13,7 +13,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className="bg-[var(--card)] rounded-2xl p-6 shadow-lg w-full max-w-3xl mx-auto overflow-hidden">
+    <div className="bg-card rounded-2xl p-2 shadow-lg w-full max-w-3xl mx-auto overflow-hidden">
       <div className="relative h-64 rounded-xl flex items-center justify-center overflow-hidden">
         {images.map((img, index) => (
           <img
@@ -26,8 +26,8 @@ const Hero = () => {
           />
         ))}
 
-        <span className="absolute text-3xl font-bold text-black bg-white/60 px-4 py-2 rounded-md backdrop-blur-sm z-10">
-          Hero Illustration
+        <span className="absolute text-xl font-bold text-black bg-white/20 px-4 py-2 rounded-md backdrop-blur-sm z-10">
+          Slider illustration
         </span>
       </div>
     </div>

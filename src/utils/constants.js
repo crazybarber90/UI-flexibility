@@ -6,8 +6,3 @@ export const COLORS = {
   sub: '#A3A3A3',
   cardBg: '#121818',
 }
-
-export const FONTS = {
-  heading: "'Poppins', sans-serif",
-  body: "'Inter', sans-serif",
-}

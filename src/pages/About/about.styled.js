@@ -32,8 +32,8 @@ export const Card = styled.div`
 
   &:hover {
     transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 12px 40px rgba(0, 224, 198, 0.35);
-    border-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0, 224, 198, 0.35);
+    border-color: rgba(0, 224, 198, 0.35);
     background: linear-gradient(
       180deg,
       rgba(18, 24, 24, 0.8),

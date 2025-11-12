@@ -75,7 +75,7 @@
 .btn-submit {
   background: var(--primary);
   border: none;
-  color: black;
+  color: var(--bg);
   padding: 12px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -85,7 +85,7 @@
 }
 
 .btn-submit:hover {
-  background: var(--accent);
+  background: var(--primary);
   transform: translateY(-3px);
 }
 

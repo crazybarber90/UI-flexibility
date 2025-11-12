@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,8 +17,66 @@
 
 body {
   @apply bg-bg text-text;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Plus Jakarta Sans'; */
+  font-family: 'Manrope';
   background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Border animation */
+@keyframes border-draw {
+  0% {
+    clip-path: polygon(0% 100%, 0% 100%, 0% 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 100% 0%);
+  }
+  75% {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  100% {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+}
+
+/*  Home card 2 animation */
+@keyframes tilt-float {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+  }
+  30% {
+    transform: rotateX(5deg) rotateY(-23deg) translateY(-4px);
+  }
+  70% {
+    transform: rotateX(-5deg) rotateY(23deg) translateY(-6px);
+    box-shadow: 0 6px 12px rgba(255, 0, 128, 0.25);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+  }
+}
+
+/*  Home card 3 animation */
+@keyframes tilt-slide {
+  0% {
+    transform: rotateZ(0deg) translateY(0);
+    box-shadow: 0 0 0 rgba(53, 240, 255, 0);
+  }
+  40% {
+    transform: rotateZ(-15deg) translateY(-35px);
+    box-shadow: 0 10px 15px rgba(53, 240, 255, 0.25);
+  }
+  70% {
+    transform: rotateZ(10deg) translateY(-12px);
+    box-shadow: 0 10px 25px rgba(255, 0, 128, 0.25);
+  }
+  100% {
+    transform: rotateZ(0deg) translateY(0);
+    box-shadow: 0 0 0 rgba(53, 240, 255, 0);
+  }
 }
