@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#0A0F0F] to-[#121818] text-gray-300 pt-10 pb-6 border-t border-gray-800">
@@ -5,38 +7,41 @@ const Footer = () => {
         {/* Contact section */}
         <div className="flex-1 min-w-[200px]">
           <h4 className="text-primary font-poppins mb-3 text-lg">Contact</h4>
-          <p className="text-gray-400 mb-1">Email: hello@digitalagency.com</p>
-          <p className="text-gray-400 mb-1">Phone: +381 11 123 4567</p>
+          <p className="text-gray-400 mb-1">Email: pepy90aa@gmail.com</p>
+          <p className="text-gray-400 mb-1">Phone: +381 60 70 53 042</p>
           <p className="text-gray-400">Address: Belgrade, Serbia</p>
         </div>
 
         {/* Section links */}
         <div className="flex-1 min-w-[200px]">
           <h4 className="text-primary font-poppins mb-3 text-lg">Links</h4>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="block mb-1 hover:text-accent transition-colors"
           >
             Home
-          </a>
-          <a
-            href="/about"
+          </Link>
+
+          <Link
+            to="/about"
             className="block mb-1 hover:text-accent transition-colors"
           >
             About
-          </a>
-          <a
-            href="/services"
+          </Link>
+
+          <Link
+            to="/services"
             className="block mb-1 hover:text-accent transition-colors"
           >
             Services
-          </a>
-          <a
-            href="/contact"
+          </Link>
+
+          <Link
+            to="/contact"
             className="block mb-1 hover:text-accent transition-colors"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Sociial networks */}

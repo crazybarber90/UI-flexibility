@@ -15,10 +15,51 @@ const Home = () => {
               fontFamily: 'Popins, sans-serif',
             }}
           >
-            CSS Ninja, UI master!
+            UI Revolution
           </h1>
+
+          <h2
+            className="text-lg md:text-2xl pt-5 font-bold"
+            style={{
+              color: 'var(--text)',
+              fontFamily: 'Popins, sans-serif',
+            }}
+          >
+            Creative digital agency focused on UI + product growth.
+          </h2>
           <p className="mt-4 text-sub">
-            Creative digital agency focused on UI + product growth
+            <span
+              style={{
+                color: 'var(--primary)',
+                fontFamily: 'Popins, sans-serif',
+              }}
+            >
+              We{' '}
+            </span>{' '}
+            specialize in modern website redesigns that improve both visuals and
+            business performance.
+            <br />{' '}
+            <span
+              style={{
+                color: 'var(--primary)',
+                fontFamily: 'Popins, sans-serif',
+              }}
+            >
+              We{' '}
+            </span>
+            create clean, high-conversion layouts using the latest technologies
+            and UX principles, helping visitors easily understand your services
+            and take action. <br />
+            <span
+              style={{
+                color: 'var(--primary)',
+                fontFamily: 'Popins, sans-serif',
+              }}
+            >
+              Our
+            </span>{' '}
+            focus is delivering a fresh, strategic, and user-centered experience
+            that elevates your brand and drives results.
           </p>
 
           {/* BUTTONS */}

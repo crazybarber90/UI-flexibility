@@ -62,3 +62,10 @@ export const Details = styled.div`
   transition: max-height 0.35s ease;
   width: 100%;
 `
+export const Something = styled.div`
+  background: var(--color-card);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  color: var(--color-text);
+  box-shadow: var(--shadow-soft);
+`

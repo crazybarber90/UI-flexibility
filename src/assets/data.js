@@ -1,18 +1,19 @@
 export const team = [
   {
-    name: 'Alice',
-    shortDesc: 'Frontend Engineer',
-    fullDesc:
-      'Alice builds scalable and beautiful user interfaces with React and Styled-Components.',
-    image: 'https://randomuser.me/api/portraits/women/68.jpg',
-  },
-  {
     name: 'Bob',
     shortDesc: 'Designer',
     fullDesc:
       'Bob creates stunning visuals and design systems for our clients.',
     image: 'https://randomuser.me/api/portraits/men/45.jpg',
   },
+  {
+    name: 'Alice',
+    shortDesc: 'Frontend Engineer',
+    fullDesc:
+      'Alice builds scalable and beautiful user interfaces with React and Styled-Components.',
+    image: 'https://randomuser.me/api/portraits/women/68.jpg',
+  },
+
   {
     name: 'Carol',
     shortDesc: 'Product Manager',
